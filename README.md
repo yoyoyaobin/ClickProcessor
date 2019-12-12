@@ -57,4 +57,4 @@ Aspect.init().setClickDelayTime(500).setOnAspectListener(object : OnAspectListen
 3.如果需要关闭该监听，可以调用Aspect.getInstance().isOpen(false) 默认为true打开
 
 ## LICENSE
-详见[LICENSE](https://github.com/yoyoyaobin/PreventKeyboardBlockUtil/blob/master/LICENSE)
+详见[LICENSE](https://github.com/yoyoyaobin/ClickProcessor/blob/master/LICENSE)
