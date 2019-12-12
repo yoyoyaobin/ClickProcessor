@@ -29,7 +29,7 @@ allprojects {
 	}
  ```
  
- ### 3.在你的application注册
+ ### 3.在你的application注册（或者根activity也行）
  ```
  //kotlin写法
 Aspect.init().setClickDelayTime(500).setOnAspectListener(object : OnAspectListener {
