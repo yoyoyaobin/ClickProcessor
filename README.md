@@ -61,5 +61,8 @@ Aspect.init().setClickDelayTime(500).setOnAspectListener(object : OnAspectListen
  
 3.如果需要关闭该监听，可以调用Aspect.getInstance().isOpen(false) 默认为true打开
 
+## 目前未解决的缺陷
+如果使用lambda表达式编写的onclick回调，无法生效，其他普通写法包括kotlin都可以。
+
 ## LICENSE
 详见[LICENSE](https://github.com/yoyoyaobin/ClickProcessor/blob/master/LICENSE)
