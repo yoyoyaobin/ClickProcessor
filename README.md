@@ -25,7 +25,7 @@ allprojects {
  
  //在dependencies内部引入库
  dependencies {
-	        implementation 'com.github.yoyoyaobin:ClickProcessor:1.0.0'
+	        implementation 'com.github.yoyoyaobin:ClickProcessor:1.0.1'
 	}
  ```
  
