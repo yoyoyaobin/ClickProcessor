@@ -33,7 +33,7 @@ allprojects {
  ```
  //kotlin写法
 Aspect.init().setClickDelayTime(500).setOnAspectListener(object : OnAspectListener {
-            override fun aspect(): Boolean {
+            override fun aspect(view: View): Boolean {
                 //可以在这里写一些项目里需要统一处理的逻辑，比如判断网络，是否已登录等
                 //返回true则事件继续传递，false则不会传递事件
                 return true
@@ -42,7 +42,7 @@ Aspect.init().setClickDelayTime(500).setOnAspectListener(object : OnAspectListen
  //java写法
  Aspect.init().setClickDelayTime(500).setOnAspectListener(new OnAspectListener() {
             @Override
-            public boolean aspect() {
+            public boolean aspect(View view) {
                 return true;
             }
         });
