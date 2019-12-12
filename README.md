@@ -11,6 +11,11 @@
 ## 使用方式
 ### 1.在project的build.gradle里配置
 ```
+dependencies {
+	...
+	classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.8'
+	}
+
 allprojects {
 		repositories {
 			...
