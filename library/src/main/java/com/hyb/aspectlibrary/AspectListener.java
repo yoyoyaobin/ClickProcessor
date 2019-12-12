@@ -1,6 +1,7 @@
 package com.hyb.aspectlibrary;
 
 import android.util.Log;
+import android.view.View;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -34,6 +35,8 @@ public class AspectListener {
             return;
         }
 
+        Object[] args = joinPoint.getArgs();
+        View clickView = (View)args[0];
         clickTime = System.currentTimeMillis();
         dalayTime = Configuration.getInstance().getDelayTime();
         mOnAspectListener = Configuration.getInstance().getmOnAspectListener();
@@ -43,7 +46,7 @@ public class AspectListener {
             return;
         }
 
-        if(mOnAspectListener.aspect()){
+        if(mOnAspectListener.aspect(clickView)){
             joinPoint.proceed();
         }
 

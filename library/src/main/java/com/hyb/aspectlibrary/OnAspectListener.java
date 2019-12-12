@@ -1,5 +1,7 @@
 package com.hyb.aspectlibrary;
 
+import android.view.View;
+
 /**
  * 类描述：
  * 创建人：huangyaobin
@@ -9,5 +11,5 @@ package com.hyb.aspectlibrary;
  * 修改备注：
  */
 public interface OnAspectListener {
-    boolean aspect();
+    boolean aspect(View view);
 }
